@@ -2,12 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href=".\src\img\icon.svg" />
     <title>Voice Recorder</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div class="app">
+        <div class="registrazione">
+            <div class="testo-rec-outer">
+              <label class="testo-rec-inner" for="testo">Start a new recording</label>
+            </div>
+            <div class="image-rec-outer">
+              <button class="recButton" id="recButton" type="button" disabled>
+                <img class="image-rec-inner" src="./src/img/record.svg"/>
+              </button>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/record.ts"></script>
   </body>
 </html>
